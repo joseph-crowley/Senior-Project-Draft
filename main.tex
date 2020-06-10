@@ -1,0 +1,44 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+
+% this is to fix header confusion 
+\newcommand{\sectionWithFixedHeader}[2]{\section[#1]{#1\sectionmark{#2}}\sectionmark{#2}} 
+                    % \sectionWithFixedHeader{Long title}{Short title}
+
+
+\graphicspath{ {images/} }
+
+\title{
+{Online-Offline $O^2$ Simulations of the ALICE Fast Interaction Trigger (FIT) T0+ A-side}\\
+{\large Department of Physics, California Polytechnic State University}\\
+{\large San Luis Obispo}\\
+}
+\author{Joe Crowley}
+\date{April 2020}
+ 
+\begin{document}
+
+
+\maketitle
+\tableofcontents
+
+\input{chapters/introduction}
+\input{chapters/FIT_T0+_Hardware.tex}
+\input{chapters/O2_Simulations_of_T0+_A-side.tex}
+\input{chapters/discussion.tex}
+\input{chapters/Acknowledgements.tex}
+ 
+ 
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{references}
+\newpage
+
+\end{document}
