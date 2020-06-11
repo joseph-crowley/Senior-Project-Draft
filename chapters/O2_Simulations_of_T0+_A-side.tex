@@ -6,7 +6,7 @@ The ALICE Online-Offline Computing System $O^2$ has built-in simulation capabili
 \section{Monte Carlo Event Simulations and Detector Geometry}
 
 \subsection{Geant}
-Run 3 requires fast Monte-Carlo simulations to meet the requirements of analysis topics. Particle transport must be optimized to handle an increase by a factor of 20 in simulation requirements. To do this, Geant4 has a multi-threading transport package that satisfies these requirements. Along with the particle transport efficiency, Geant4 has compatibility with ROOT geometry capabilities that allow for construction of ALICE detector geometry in simulation. This helps to accurately track which of the detectors are hit, which materials a particle travels through, and it informs the MC generator of the probability distributions for interactions between beam particles and ALICE components. HIJING produces jets at the interaction point
+Run 3 requires fast Monte-Carlo simulations to meet the requirements of analysis topics. Particle transport must be optimized to handle an increase by a factor of 20 in simulation requirements. To do this, Geant4 has a multi-threading transport package that satisfies these requirements \cite{Geant4}. Along with the particle transport efficiency, Geant4 has compatibility with ROOT geometry capabilities that allow for construction of ALICE detector geometry in simulation. This helps to accurately track which of the detectors are hit, which materials a particle travels through, and it informs the MC generator of the probability distributions for interactions between beam particles and ALICE components. HIJING produces jets at the interaction point that are propagated through the detector. 
 
 \begin{figure}[H]
     \centering

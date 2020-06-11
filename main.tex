@@ -3,7 +3,11 @@
 \usepackage{graphicx}
 \usepackage[margin=1.0in]{geometry}
 \usepackage{float}
-\usepackage{subfig}
+\usepackage{subfig}\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{breaklinks=true}
+\urlstyle{same}
+\usepackage{cite}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
@@ -33,12 +37,11 @@
 \input{chapters/FIT_T0+_Hardware.tex}
 \input{chapters/O2_Simulations_of_T0+_A-side.tex}
 \input{chapters/discussion.tex}
-\input{chapters/Acknowledgements.tex}
  
  
 \newpage
-\bibliographystyle{abbrv}
+\Urlmuskip=0mu plus 1mu\relax
+\bibliographystyle{plain}
 \bibliography{references}
-\newpage
 
 \end{document}

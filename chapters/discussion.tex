@@ -1,7 +1,14 @@
 \chapter{Discussion}
+The LHC Long Shutdown 2 is a scheduled maintenance and upgrade period for each of the experiments and the accelerator ring. During this period, the ALICE collaboration has been working on major upgrades to their Fast Interaction Trigger. These upgrades include increased detector acceptance and resolution, as well as enhanced simulation capabilities using the $O^2$ Computing System. A short summary of the upgrades to FIT T0+ hardware and simulations is given below.
+
 
 \section{FIT Software}
+Chapter 3 provides an overview of the software written to include an Aluminum support structure for T0+ in simulations. This is useful for determining how the support structure will affect detector resolution and backgrounds. The upgrade to $O^2$ simulations of the FIT T0+ was done by implementing the geometry of the support structure in ROOT. An example analysis is given in Chapter 3, including a histogram of the hits generated in the T0+ sensitive components.
 
 \section{FIT Hardware}
+Chapter 2 includes a summary of the FIT hardware, with an emphasis on the electronics of FIT T0+. T0+ is a Cherenkov detector that is used to measure critical experimental parameters about collisions and beam status. This is done using Micro-channel plate photomultipliers and amplification electronics. To power the detector, high voltage electronics were assembled and tested in the ALICE FIT lab in summer of 2019. Testing was done using a pulsed laser, which was split between a tesnt PMT and a reference PMT. By measuring the response of each PMT, the appropriate driving voltages and wiring order was determined. Logging these tests is useful because each PMT measures independently, so the crosstalk between channels is important to characterize.  These electronics will supply power to the MCP-PMTs in T0+ A-side during LHC Run 3. 
+
 
 \section{Future Work}
+
+This thesis lays the groundwork for future Cal Poly Senior Projects, with opportunities extending in both hardware and software. Having assembled and tested the MCP-PMTs used in ALICE, the description of FIT hardware in Chapter 2 can be used to develop an introductory physics experiment: students can develop a testing apparatus similar to the one shown in Fig. \ref{fig:PMT_Testing_Apparatus} to become acquainted with electronics used in High Energy Physics. The software development in this thesis incorporated the Aluminum support structure into $O^2$ simulations and includes a basic example of ROOT analysis capabilities. Using the $O^2$ computing system, students can run analysis tasks to determine the detector performance, acceptance, and background contributions. These projects are ideal for a senior thesis, as they bring students to the front lines of experimental development from hardware and software perspectives. 
