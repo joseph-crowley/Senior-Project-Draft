@@ -1,0 +1,21 @@
+\chapter{Summary and Conclusion}
+
+The CERN LHC Long Shutdown 2 is a scheduled maintenance and upgrade period for each of the experiments and the accelerator ring. During this period, the ALICE collaboration has been working on major upgrades, including the development of the Fast Interaction Trigger (FIT) detector. These upgrades include increased detector acceptance and resolution, as well as enhanced simulation capabilities using the $O^2$ Computing System. For this project, both hardware and software tasks in support of the FIT detector upgrade have been completed.  
+
+Chapter 2 includes a summary of the FIT hardware, with an emphasis on the electronics of FIT T0+ (FT0). FT0 is a Cherenkov detector composed of quartz radiators and Micro-channel plate photomultipliers (MCP-PMTs) to detect particles from the interaction zone early enough to signal data acquisition in the rest of ALICE.  In the summer of 2019, high voltage electronics were assembled and tested in the ALICE FIT lab. Testing was done using a pulsed laser, which was split between a test MCP-PMT and a reference traditional PMT. By measuring the response of each MCP, the appropriate driving voltages and wiring order was determined. Logging these tests is useful because each MCP measures independently, so the crosstalk between channels is important to characterize.  These components have been assembled into a complete detector and will supply trigger signals to ALICE during LHC Run 3. 
+
+Chapter 3 provides an overview of the software written to include an Aluminum support structure for FT0-A in simulations. This is useful for determining how the support structure will affect detector resolution and backgrounds. The software was implemented within the ALICE $O^2$ framework, an upgrade to the full ALICE data acquisition and reconstruction software that was necessary to handle the increased luminosity and data volumes expected in LHC Run 3. The geometry of the support structure was translated from CAD drawings into a geometrical description within ROOT. An example analysis is given in Chapter 3, including a histogram of the hits generated in the FT0-A sensitive components.
+
+
+\section{Outlook and Future Work}
+
+This thesis lays the groundwork for future Cal Poly Senior Projects, with opportunities extending in both hardware and software. Having assembled and tested the MCP-PMTs used in ALICE, the description of FIT hardware in Chapter 2 can be used to develop an introductory physics experiment: students can develop a testing apparatus similar to the one shown in Fig. \ref{fig:PMT_Testing_Apparatus} to become acquainted with electronics used in High Energy Physics. The software development in this thesis incorporated the Aluminum support structure into $O^2$ simulations and includes a basic example of ROOT analysis capabilities. Using the $O^2$ computing framework, students can run analysis tasks to determine the detector performance, acceptance, and background contributions. Specific examples of projects that will contribute to make all of ALICE Run 3 physics possible include 
+
+\begin{itemize}
+    \item digitizing the hits and analyzing the output to determine trigger efficiency, timing resolution for FT0-A
+    \item investigating secondary particles generated in the FT0-A detector geometry that contribute background noise to other detectors
+    \item completing the FT0-C support structure description and carrying out the same characterization tasks as for FT0-A
+    \item implementing the geometric description of the additional material for cabling and electronics, then repeating the characterization tasks
+\end{itemize}
+
+Projects such as these are ideal for senior theses, as they are accessible and allow students to experience both the hardware and software elements of detector development in one of the most complex and cutting-edge experiments at the world's largest accelerator.
